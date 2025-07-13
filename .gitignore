@@ -1,0 +1,7 @@
+.env
+*.session
+__pycache__/
+*.pyc
+venv/
+learning_data.txt
+output_*.png
