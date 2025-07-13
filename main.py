@@ -27,6 +27,9 @@ try:
   import json
   import os
   import base64
+  import feedparser
+  import requests
+  import gtts
 
 
 except ImportError as e:
@@ -34,7 +37,7 @@ except ImportError as e:
   import subprocess
   import sys
   # Use uv instead of pip for better dependency management
-  subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "telethon", "deep-translator", "newspaper3k", "pillow", "beautifulsoup4", "pydub", "python-dotenv", "gTTS", "feedparser", "SpeechRecognition", "replicate", "aiohttp", "jdatetime", "requests", "lxml_html_clean"])
+  subprocess.check_call([sys.executable, "-m", "pip", "install", "--no-cache-dir", "telethon", "deep-translator", "newspaper3k", "pillow", "beautifulsoup4", "pydub", "python-dotenv", "gTTS", "feedparser", "SpeechRecognition", "replicate", "aiohttp", "jdatetime", "requests", "lxml_html_clean", "torch", "transformers", "torchvision"])
   # Re-import after installation
   import telethon
   import deep_translator
